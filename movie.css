@@ -1,0 +1,64 @@
+#body{
+    background-color: rgb(14, 1, 26);
+}
+#Div1{
+    /* border: 1px solid black; */
+    background-color: rgb(54, 0, 45);
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+#Music_navbar{
+    /* display: flex; */
+    text-align: center  ;
+    justify-content:space-around;
+    padding-left: 200px;
+    /* padding-right: 100px; */
+    background-color: rgb(69, 2, 152, 0);
+}
+#Music_size{
+    font-size: 30px;
+    color: azure;
+}
+#Search_size{
+    /* color: aliceblue; */
+    background-color: rgb(69, 2, 152, 0);
+    /* padding-left:100px; */
+    width: 300px;
+    height: 40px;
+}
+#Search_button{
+    /* padding-left: 100px; */
+    background-color: rgb(69, 2, 152, 0);
+    width: 100px;
+    height: 40px;
+    border-radius:2px ;
+}
+/* #Music_search{ */
+    /* padding-left: 100px; */
+/* } */
+.Music_div{
+    /* border: 1px solid black; */
+    background-color: rgba(148, 5, 148, 0);
+    height:300px;
+    width:100%;
+    /* padding-top: 20px;
+    padding-left: 10px; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+.Music_albums{
+    padding-left:10px;
+    padding-right:10px;
+    /* justify-content: space-around; */
+    background-color: rgb(5, 1, 55);
+    border: 1px solid black;
+    width: 33%;
+    height: 95%;
+}
+#moviediv{
+    background-color: rgba(148, 5, 148, 0);
+}
