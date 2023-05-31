@@ -19,13 +19,17 @@
     /* padding-right: 100px; */
     background-color: rgb(69, 2, 152, 0);
 }
+.mainitem{
+    width: 100%;
+    display: inline-block;
+}
 #Music_size{
     font-size: 30px;
     color: azure;
 }
 #Search_size{
     /* color: aliceblue; */
-    background-color: rgb(69, 2, 152, 0);
+    /* background-color: rgb(69, 2, 152, 0); */
     /* padding-left:100px; */
     width: 300px;
     height: 40px;
@@ -48,6 +52,7 @@
     /* padding-top: 20px;
     padding-left: 10px; */
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-around; */
 }
 .Music_albums{
@@ -56,9 +61,270 @@
     /* justify-content: space-around; */
     background-color: rgb(5, 1, 55);
     border: 1px solid black;
-    width: 33%;
+    width: 25%;
     height: 95%;
 }
 #moviediv{
+    flex-wrap: wrap;
     background-color: rgba(148, 5, 148, 0);
 }
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width:300px) and (max-width: 480px) {
+    #Div1 {
+      text-align: center;
+      background-color: rgb(54, 0, 45);
+      width: 100%;
+      justify-content: center;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+    #Music_navbar{
+        text-align: center;
+        float: right;
+        /* justify-content:unset; */
+        /* background-color: lightblue; */
+        padding-left: 1px;
+    }
+    #Music_size{
+        /* float:left; */
+        text-align: center;
+        font-size: 20px;
+        /* background-color: lightblue; */
+    }
+    #searchDiv{
+        justify-content: right;
+        float: right;
+    }
+    #Music_search{
+        float: right;
+        /* height: 30px; */
+        /* text-align: center; */
+        /* background-color:pink ; */
+        /* justify-content: center; */
+        width: 200px;
+
+    }
+    #Search_size{
+        float: right;
+        font-size: 10px;
+        text-align: center;
+        width: 110px;
+        /* justify-content:start; */
+        height: 25px;
+    }
+    #Search_button{
+        float: right;
+        font-size: 10px;
+        text-align: center;
+        width: 50px;
+        height: 25px;
+    }
+    #moviediv{
+        width: 100%;
+    }
+    .Music_albums{
+        width: 50%;
+    }
+    .mainitem{
+        width: 200px;
+        display: inline-block;
+    }
+    .newMovies{
+        width: 200px;
+        display: inline-block;
+    }
+    .datadiv{
+        width: 50%;
+    }
+    .imageDiv{
+        width: 100%;
+        height: 250px;
+    }
+    .imageclass{
+        width: 100%;
+        height: 100%;
+    }
+  }
+  @media (max-width: 300px) {
+    #Music_navbar{
+        padding-left: 1px;
+    }
+    #Music_size{
+        /* float:left; */
+        text-align: center;
+        font-size: 15px;
+        /* background-color: lightblue; */
+    }
+    #Div1 {
+        text-align: center;
+        background-color: rgb(45, 2, 37);
+        width: 100%;
+        justify-content: center;
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+      #Music_search{
+        float: right;
+        width:  150px;
+        /* justify-self: end; */
+    }
+    #Search_size{
+        float: right;
+        font-size: 10px;
+        text-align: center;
+        width: 60px;
+        /* justify-content:start; */
+        height: 25px;
+    }
+    #Search_button{
+        float: right;
+        font-size: 8px;
+        text-align: center;
+        width: 30px;
+        padding-left: 1px;
+        height: 25px;
+    }
+
+    #moviediv{
+        width: 100%;
+    }
+    .Music_albums{
+        width: 100%;
+    }
+    .mainitem{
+        width: 100%;
+        display: inline-block;
+    }
+    .newMovies{
+        width: 100%;
+        display: inline-block;
+    }
+    .datadiv{
+        width: 100%;
+    }
+    .imageDiv{
+        width: 100%;
+        height: 250px;
+    }
+    .imageclass{
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  /* tabs */
+
+  @media (min-width:480px) and (max-width: 780px) {
+    #Div1 {
+        text-align: center;
+        background-color: rgb(54, 0, 45);
+        width: 100%;
+        justify-content: center;
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+      #Music_size{
+        /* float:left; */
+        padding-left: 1px;
+        padding-right: 1px;
+        text-align: center;
+        font-size: 20px;
+        justify-self: end;
+        float:right;
+        /* background-color: lightblue; */
+    }
+    #Music_navbar{
+        padding-left: 1px;
+        padding-right: 1px;
+        justify-content: center;
+        float: left;
+        justify-self: end;
+    }
+    #Music_search{
+        float: right;
+        width:  300px;
+        justify-self: end;
+    }
+    #Search_size{
+        font-size: 15px;
+        width: 200px;
+    }
+    #Search_button{
+        width: 60px;
+        font-size: 15px;
+    }
+    #moviediv{
+        width: 100%;
+        /* justify-self: end; */
+    }
+    .Music_albums{
+        width: 33.3%;
+
+    }
+    .mainitem{
+        width: 33.3%;
+        display: inline-block;
+    }
+    .newMovies{
+        width: 33.3%;
+        display: inline-block;
+    }
+    .datadiv{
+        width: 33.3%;
+    }
+    .imageDiv{
+        width: 100%;
+        height: 250px;
+    }
+    .imageclass{
+        width: 100%;
+        height: 100%;
+    }
+    
+  }
+  @media (min-width:780px )  {
+    #Div1 {
+        text-align: center;
+        background-color: rgb(45, 2, 37);
+        width: 100%;
+        justify-content: center;
+        padding-left: 2px;
+        padding-right: px;
+      }
+      #Search_size{
+        /* color: aliceblue; */
+        background-color: rgb(69, 2, 152, 0);
+        /* padding-left:100px; */
+         width: 200px;
+        height: 40px; 
+    }
+    #Music_navbar{
+        padding-left: 50px;
+    }
+    .mainitem{
+        width: 100%;
+        display: inline-block;
+    }
+    .newMovies{
+        width: 100%;
+        display: inline-block;
+    }
+    .datadiv{
+        width: 25%;
+    }
+    .imageDiv{
+        width: 100%;
+        height: 250px;
+        border-color: blue;
+    }
+    .imageclass{
+        width: 100%;
+        height: 100%;
+    }
+    .nameclass{
+        font-size: 15px;
+    }
+
+  }
+
+
