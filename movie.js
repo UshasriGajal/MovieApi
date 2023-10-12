@@ -47,8 +47,6 @@ fetch(url,options)
 		span.append(div)
 		movie.append(span)
 		document.body.append(movie)
-	
-
 	}
 });
 }
