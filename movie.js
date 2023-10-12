@@ -18,6 +18,7 @@ fetch(url,options)
 .then((data)=> {
 	obj=data ;
 })
+// usha
 
 .then(() => {
 	var span=document.createElement("span")
